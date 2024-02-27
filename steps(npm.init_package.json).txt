@@ -1,0 +1,58 @@
+npm - node package manager 
+    *it provides us -
+    - manage dipendencies 
+    - package management
+    - provide commandline interface 
+    - version control
+    -publishing & sharing packages 
+    -script & automate 
+
+
+
+npm - v (check node is working properly or not )
+1.creating a folder 
+    - mkdir my_react_app
+2.getting the react template 
+    - npm react-app my_react_app  [(react-app)- is a template(package) name and my_react_app is the path: where is to initilise mainly ]
+3.mkdir my_esm_lib
+    **first enter in the folder otherwise --yes won't be work 
+    -npm init esm my_esm_lib --yes (--yes is for selecting things by-default )           
+
+    **normally you can do (npm init esm ) but you have to provide the path -(npm init esm my_esm_lib)
+4.cd ../
+5. mkdir projects
+6. making packge.js with default confing by using (-y)
+    - npm init -y 
+for managing packages and creating workspace
+    - npm init -w packages/p1  [(-w)-> is workspace{Creating workspace}  , (p1)-> is a package inside a packages and we are making a package named (p1) ]
+for making and managing multiple package
+    - just normal command with the workspace name 
+    npm init -w packages/my-react-app react-app my-react-app   [(-w packages/my-react-app)-> path or work space where i want to install things  ,(react-app)->script name , (my-react-app)-> folder name for running script ]
+
+for search anything 
+    -npm search react
+
+
+for installing packages manualy 
+    -npm install package_name 
+    if we want to install package and Want To Add automatically in package.json (installing in dependency)
+    -npm install package_name --save 
+    if we want to install package and Want To Add automatically in package.json(as a DEV dependency )
+    -npm install package_name --save-dev
+    **DEV dependency
+    --> if we want to use dipendencies is just for current work and don't want to sharec them to other developers then we we use dev dependencies 
+    
+    If we want to install multiple package at the same time
+    -npm install package_name1 package_name2 package_name3
+    if want to install a (specific version ) of a package
+    -npm  install react-scripts@5.0.1 --save-dev
+
+
+uninstalling of any package 
+--> npm  uninstall react (just use uninstall )
+    npm uninstall react --save
+    if it dosen't work then you can forcefully do that
+    - npm uninstall react --save --force
+
+from dev dependency
+-->npm  install react --save-dev
