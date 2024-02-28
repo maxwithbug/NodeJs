@@ -1,6 +1,6 @@
 //making and starting my first server --
 
-const { log } = require('console')
+
 const http = require('http')
 
 
