@@ -1,5 +1,8 @@
+/*file system best for on the work and temporary things (likek : crearting a file ,read , write .etc...) */
+
+
 /*reading the fs.js file in ASynchronous way (high lvl api) */
-const fs = require('fs')  //fs is a module for file oparations
+const fs = require('fs');//fs is a module for file oparations
 
 console.log("READ START");
 fs.readFile('noob.txt' ,function(err , data)/*it's a callback function */{  //you can put path in noob.txt , we are not putting path because we are in current path , if any file in other path the you have to put path 
@@ -109,7 +112,7 @@ fs.writeFile(filePath, content, (err) => {
   console.log('File created successfully!');
 });
 
-//**delete a file --
+//**delete a file --(only for file , we have other methods for folder)
 fs.unlink('noob.txt',(err)=>{
     if(err){
         console.log('error in deleting file ');
