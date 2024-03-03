@@ -47,7 +47,7 @@ fs.appendFile('nodejs_architecture.txt' ,"  node provides many advantages " , 'u
 });
 
 //deleting file 
-// fs.unlink('nodejs_architecture.txt' , (err)=>{if(err) console.log("error in deleting file "); else console.log('sucessfully deleted');})
+fs.unlink('nodejs_architecture.txt' , (err)=>{if(err) console.log("error in deleting file "); else console.log('sucessfully deleted');})
 
 
 
