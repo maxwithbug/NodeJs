@@ -23,9 +23,9 @@ function random(){
     console.log('random is working ');
 }
 //calling event 
-emitter.addListener('Remove',random)
+emitter.on('Remove',random) /*or, you can do --> emitter.addListener('Remove',random) */
 //removing event 
-emitter.removeListener('Remove',random)
+emitter.off('Remove',random) /*or ,you can do -->emitter.removeListener('Remove',random)*/
 //calling after removal
 console.log('calling after removal');
 emitter.emit('Remove')
@@ -34,6 +34,6 @@ emitter.emit('Remove')
 
 
 // limiting event listener 
-console.log(`The default maximum number of event listners are: ${emitter.getMaxListeners()}`);
+console.log(`The default maximum number of event listners are: ${emitter.getMaxListeners()}` );
 emitter.setMaxListeners(5);
-console.log(`The default maximum number of event listners are: ${emitter.getMaxListeners()}`);
+console.log(`The default maximum number of event listners are: ${emitter.getMaxListeners()}` );
